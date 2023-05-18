@@ -1,0 +1,61 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .photo {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .photo:hover {
+    transform: scale(1.05);
+  }
+  
+  .caption {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  }
+  
+  .caption h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+  
+  .caption p {
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .gallery {
+      justify-content: center;
+    }
+  
+    .photo {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
